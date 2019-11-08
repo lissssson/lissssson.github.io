@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>腾讯首页</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			
+			.logo {
+				float: left;
+				margin-top: 18px;
+				height: 37px;
+				width: 131px;
+				line-height: 28.8px;
+			}
+			.box{
+				margin: 0 auto;
+				width: 1148px;
+			}
+			
+			#sougou {
+				width: 600px;
+				height: 70px;
+				float: left;
+			}
+			
+			#SEARCH {
+				width: 382px;
+				height: 30px;
+				margin: 24px 4px 0 184px;
+				border: 1px solid #dfdfdf;
+				background-color: #f3f6f8;
+				border-radius: 20px;
+			}
+			
+			#search {
+				position: relative;
+				height: 15px;
+				line-height: 32px;
+				margin: 0 0 0 5px;
+				border: none;
+				outline: none;
+				background-color: #f3f6f8;
+				width: 225px;
+				font-size: 14px;
+			}
+			#searchBtn{
+				height: 32px;
+				width: 96px;
+				line-height: 32px;
+				padding: 0 16px;
+				position: relative;
+				top: -1px;
+				border: none;
+				color: #FFF;
+				background-color: #1479D7;
+				font-size: 16px;
+				margin: 0;
+				cursor: pointer;
+				border-radius: 20px;
+			}
+			.icon{float:left;margin: 18px 0 0 300px;}
+			#icon-zone{float:left; width: 35px;height: 40px;color: #FFFFFF; background-image: url(img/icons_2x.png);background-position-x: 0;background-position-y: -110px;}
+			#icon-zone:hover{background-position: 0 -169px;}
+			#icon-email{float:left;margin-left: 10px; width: 35px;height: 40px; background-image: url(img/icons_2x.png);background-position-x: 0;background-position-y: -218px;}
+			#icon-email:hover{background-position: 0 -276px;}
+			
+			#menu {
+				background-color: #1479D7;
+				height: 22px;
+				width: 1148px;
+				float: left;
+				position: relative;
+				border-radius: 3px;
+				padding-bottom: 20px;
+			}
+			
+			.menu {
+				line-height: 18px;
+				position: absolute;
+			}
+			
+			.menu li {
+				float: left;
+				list-style: none;
+				margin-right: 24px;
+				font-size: 20px;				
+			}
+			ul{margin: 9px 0;}
+			li{
+				margin: 2px;
+			}
+			a{
+				text-decoration: none;
+				color: #FFFFFF;
+				font-size: 16px;
+				font-family: simsun;
+			}
+			.a2{
+				padding: 4px 5px;
+				text-align: center;
+				}
+			.a2:hover{
+				background-color: #cbe1ed;
+				color: #1479D7;}
+			#img2{
+				float: left;margin-left: 50px;}
+			#img1{
+				float: left;}
+			.centerbox{
+				float: left;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				}
+			
+			.left{
+				width: 360px;
+				height: 750px;
+				float: left;
+				}
+			.left-tittle{
+				width: 360px;
+				height: 44px;
+				float: left;
+				}
+			.left-content{
+				width: 360px;
+				height: 795px;
+				float: left;
+				}
+			
+			.center{
+				width: 360px;
+				height:750px;
+				float: left;
+				margin-left: 35px;
+				}
+			.center-title{
+				width: 360px;
+				height: 44px;
+				float: left;
+				}
+			.center-content{
+				width: 360px;
+				height: 795px;
+				float: left;
+				}
+			
+			.right{
+				width: 360px;
+				height: 750px;
+				float: left;
+				margin-left: 30px;
+				}
+			.right-tittle{
+				width: 360px;
+				height: 44px;
+				float: left;
+				}
+			.right-content{
+				width: 360px;
+				height: 500px;
+				float: left;
+				margin-top: 100px;
+				}
+			
+			h2{
+				font-family: simsun;
+				float: left;
+				float: left;
+				padding-top: 5px;
+				}
+			.til{
+				font-family: simsun;
+				color: #333;
+				}
+			.til:hover{
+				color: #1479D7;
+				}
+			span{width: 30px;height: 15px;display: block;float: left;}
+			li{
+				list-style-type: none;
+				}
+			.piece{
+				font-family: simsun;
+				font-size: 12px;
+				color: #333;
+				line-height: 25px;
+				}
+			.piece:hover{
+				color: #1479D7;
+				}
+			
+			.li1{
+				width: 360px;
+				height: 30px;
+				margin:0;
+				float: left;
+				text-align: center;
+				}
+			.blank{color: #333;
+			font-family: simsun;
+			font-size: 14px;
+			margin: 8px 0 0 8px;
+			float: left;
+			}
+			.blank:hover{
+				color: #1479D7;
+				}
+			.blanktxt{
+				border: 1px solid #cae0f3;
+				float: left;
+				}
+			.bottom{float: left;
+			width: 1148px;
+			height: 300px;
+			}
+			.bottom-img{
+				margin-top: 30px;
+				}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="logo">
+				<a href="https://www.qq.com/" target="_blank">
+					<img width="131px" src="https://mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/qq_logo_2x.png" alt="腾讯网" />
+				</a>
+			</div>
+			<div id="sougou">
+				<form action="https://alteredqualia.com/xg/examples/albert.html" target="_blank">
+				<div id="SEARCH">
+					<span style="margin:7px 6px 0 15px;font-size:14px;font-family: simsun;">网页</span>
+					<input id="search" autocomplete="off">
+					<button id="searchBtn" type="submit">搜狗搜索</button>
+				</div>
+				</form>
+			</div>
+			<div class="icon">
+				<div id="icon-zone"></div>
+				<div id="icon-email"></div>
+			</div>
+			<div id="menu">
+				<ul class="menu" style="color: #FFFFFF">
+					<li>
+						<a href="" target="_blank" class="a2">新闻</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">视频</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">图片</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">军事</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">体育</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">NBA</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">娱乐</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">财经</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">科技</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">时尚</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">汽车</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">房产</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">教育</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">文化</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">游戏</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">星座</a>
+					</li>
+					<li>
+						<a href="" target="_blank" class="a2">更多</a>
+					</li>
+				</ul>
+			</div>
+			<div class="centerbox">
+				<div id="img1">
+					<a href="https://news.qq.com/mobile/index.htm">
+				<img src="https://ra.gtimg.com/web/default_fodders/920x75_www.png" width="678px" height="65px"/>
+				</div>
+				<div id="img2">
+					<img src="https://img1.gtimg.com/ninja/2/2018/10/ninja153907290259802.png" src="img/ninja153907291410277.png" width="420px" height="65px"/>
+				</div>
+			</div>
+			<div class="left">
+			<div class="left-tittle">
+				<h2 class="title f1">
+					<a href="" class="til">要闻</a>
+				</h2>
+				<span class="title-line"></span>
+				<h2 class="title f1">
+					<a href="" class="til">湖南新闻</a>
+				</h2>
+			</div>
+			<hr color="#CBE1ED" style="height: 0.5px;">
+			<div class="left-content">
+				<ul class="news">
+					<li><a class="piece" style="font-size: 16px;"><b>历史交汇点上的伟大宣示——党的十九届四中全会侧记</b></a></li>
+					<li><a class="piece">回访总书记考察上海的地方：这一年，您的期待正在变为现实</a></li>
+					<li><a class="piece">习近平致信祝贺中国科学院建院70周年 贺信</a></li>
+					<li><a class="piece">总书记关心的百姓身边事|脱贫后，向更幸福生活前进</a></li>
+					<li><a class="piece">进博会搭建世界性贸易舞台 建立全年365天长效机制</a></li>
+					<li><a class="piece">看营商环境优化，重在市场主体信心与活力</a></li>
+					<li><a class="piece">为实现中华民族伟大复兴提供有力保证</a></li>
+					<li><a class="piece">坚持和完善中国特色社会主义制度和国家治理体系</a></li>
+					<li><a class="piece"><img src="img/u=1863674633,3548302575&fm=82&w=255&h=255&img..jpg" width="158px" height="89px" alt="">美众议院通过弹劾总统调查程序美股大跌 特朗普怒了</a></li>
+					<li><a class="piece">国产航母已完成8次海试即将正式入列？国防部回应</a></li>
+					<li><a class="piece">贿赂恐吓色诱…央视揭露境外间谍窃密、策反手段</a></li>
+					<li><a class="piece">第二届进博会邀你来 看“黑科技”让未来可期 2019进博会</a></li>
+					<li><a class="piece"><img src="img/timg(10).jpg" width="158px"></a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="center">
+			<div class="center-title">
+				<h2 class="title f1">
+					<a href="" class="til">今日话题</a>
+				</h2>
+			</div>
+			<hr color="#CBE1ED" style="height: 0.5px;">
+			<div class="center-content">
+				<ul class="news">
+					<li><a class="piece" style="font-size: 16px;"><b>排遣“少年减负之烦恼”，得让人看到减负的好处</b></a></li>
+					<li><a class="piece">中青评论| “代经济”流行真的是年轻人越来越懒吗？</a></li>
+					<li><a class="piece">新京报评论| 网络时代，老师“入户家访”out了吗？</a></li>
+					<li><a class="piece">棱镜| 创投2019怪状：募资太难，回报大涨，科创板发力</a></li>
+					<li><a class="piece">深网| 法律逐渐出台，但电商"二选一"为何仍难退出舞台？</a></li>
+					<li><a class="piece">谷雨| 汉服成街服的背后：一件价格上万，山寨成风</a></li>
+					<li><a class="piece">腾讯大家| 苹果的加入，将掀起美国视频内容的大乱战</a></li>
+					<li><a class="piece"><img src="https://img1.gtimg.com/orignal/pics/hv1/70/161/2317/150704050.jpg" width="193.4px" height="40px" alt="">池子池子池子呀</a></li>
+					<li><a class="piece"><img src="img/timg (1).jpg" width="194.3px" height="100%">震惊池子居然有花边新闻</a></li>
+					<li><a class="piece">[真捧场] 姜思达脱口秀首秀忘词 池子：我去奇葩说也忘词</a></li>
+					<li><a class="piece">十三邀| 如何拍好电影？陈冲：要怀有一种真实的信念</a></li>
+					<li><a class="piece">创战到底| 起英文名就为了洋气？瑞幸创始人回答太巧</a></li>
+					<li><a class="piece">光明时评| 高校要不要禁外卖，也是道教育题</a></li>
+					<li><a class="piece">棱镜| 宝洁欧莱雅们加入新消费"巷战"：从未如此焦虑过</a></li>
+					<li><a class="piece">深网| 448天后顺风车重新上线，滴滴准备好了吗？</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="right">
+			<div class="right-tittle">
+				<ul class="blanktxt">
+					<li class="li1" >
+						<a class="blank">新闻APP</a>
+						<a class="blank">体育APP</a>
+						<a class="blank">企鹅号</a>
+						<a class="blank">快报</a>
+						<a class="blank">视频</a>
+						<a class="blank">浏览器</a>
+						<a class="blank">微视</a>
+					</li>
+					<li class="li1" style="background-color: rgb(202,224,243);">
+						<a class="blank">微信</a>
+						<a class="blank">QQ</a>
+						<a class="blank">空间</a>
+						<a class="blank">企业微信</a>
+						<a class="blank">邮箱</a>
+						<a class="blank">腾讯云</a>
+						<a class="blank">电脑管家</a>
+					</li>
+					<li class="li1">
+						<a class="blank">LOL</a>
+						<a class="blank">DNF</a>
+						<a class="blank">CF</a>
+						<a class="blank">王者</a>
+						<a class="blank">单机游戏</a>
+						<a class="blank">火影OL</a>
+						<a class="blank">天刀</a>
+						<a class="blank">爱玩</a>
+					</li>
+					<li class="li1" style="background-color: rgb(202,224,243);">
+						<a class="blank">软件</a>
+						<a class="blank">Q币</a>
+						<a class="blank">京东</a>
+						<a class="blank">腾讯地图</a>
+						<a class="blank">腾讯文档</a>
+						<a class="blank">理财通</a>
+						
+					</li>
+				</ul>
+			</div>
+			<div class="right-content" >
+				<h2 class="title f1">
+					<a href="" class="til">热门赛事</a>
+					<hr color="#CBE1ED" style="height: 0.5px;">
+				</h2>
+				<ul class="news">
+					<li><a class="piece" style="font-size: 16px;">激情英超</a></li>
+					<li><a class="piece">张震月回来了？</a></li>
+					<li><a class="piece"><img src="img/img-b1aeefbd442d5f1f4c58ab2fb6947c6d.jpg" width="193.6px" height="200px"></a></li>
+					<li><a class="piece">欧冠|沃克当上门将？？！</a></li>
+					<li><a class="piece"></a><img src="img/img-58a7559a39ad36aee5fe03a940af1375.jpg" width="193.6px"></li>
+					<li><a class="piece">曼城|后卫当门将，究竟是道德的沦陷还是人性的毁灭</a></li>
+					<li><a class="piece">欧联杯-西班牙人6-0提前出线 武磊替补登场0射门</a></li>
+					<li><a class="piece">欧联杯-曼联3-0提前晋级 18岁小将传射成鲁尼后第一人</a></li>
+					<li><a class="piece">四国赛-中国女足2-0新西兰 王霜百场里程碑梅开二度</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="bottom">
+				<hr color="#CBE1ED" style="height: 0.5px;">
+				<div class="bottom-img">
+					<img src="https://ra.gtimg.com/web/default_fodders/1400x90_www.png" width="1148px" height="100%"/>
+				</div>
+				<div class="bottom-information" style="text-align: center;">
+					<li><a class="piece">关于腾讯 | About Tencent | 服务协议 | 隐私政策 | 开放平台 | 商务洽谈 | 腾讯招聘 | 腾讯公益 | 客服中心 | 网站导航 | 客户端下载 | 版权所有</a></li>
+					<li><a class="piece">深圳举报中心 | 深圳公安局 | 抵制违法广告承诺书 | 版权保护投诉指引 | 广东省通管局</a></li>
+					<li><a class="piece">粤网文[2017]6138-1456号 新出网证（粤）字010号 网络视听许可证1904073号 增值电信业务经营许可证：粤B2-20090059 B2-20090028</a></li>
+					<li><a class="piece">新闻信息服务许可证 粤府新函[2001]87号 违法和不良信息举报电话：0755-83765566-9 粤公网安备 44030002000001号</a></li>
+					<li><a class="piece">互联网药品信息服务资格证书 （粤）—非营业性—2017-0153</a></li>
+					<li><a class="piece">Copyright 1998 - 2019 Tencent. All Rights Reserved</a></li>
+				</div>
+			</div>
+	</body>
+
+</html>
