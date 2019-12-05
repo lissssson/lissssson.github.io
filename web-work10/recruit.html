@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Recruit</title>
+		<style>
+	body 
+{
+	background-image:url(img/QQ图片20191128114715.jpg);
+	background-color:#cccccc;
+}
+table {
+				width: 500px;
+				border: 1px solid gray;
+				border-collapse: collapse;
+			background: lightpink;
+			float: right;
+			}
+			
+			table th {
+				line-height: 30px;
+				text-align: center;
+				border: 1px solid gray;
+			}
+		#tabl{
+			float: right;
+			background-color: #808080;
+			margin: auto;
+		}
+		caption{
+			background-color: #808080;
+		}
+		#box1{
+			width: 50%;
+			float: right;
+		}
+		</style>
+	</head>
+	<body>
+ <div id="div1">
+  <div style="text-align: center;" ><p><font color="bisque" size="15" >Application Form</font></p></div>
+  <p><font color="bisque" size="20" ></font></p>
+  <div id="box1">
+  <form name="llll">
+				<h3 style="color: bisque;">Application Form</h3>
+				<label><font color="bisque">1.name</font></label>
+				<input id="idnumber" type="text">
+				<br>
+				<br>
+				<label><font color="bisque">2.sex</font></label>
+				<input id="name" type="text">
+				<br>
+				<br>
+				<label><font color="bisque">3.education</font></label>
+				<input id="sex" type="text">
+				<br>
+				<br>
+				<label><font color="bisque">4.contact</font></label>
+				<input id="phone" type="text">
+				<br>
+				<br>
+				<label><font color="bisque">5.position</font></label>
+				<input id="name" type="text">
+			</form>
+			<br>
+			<br>
+			<button onclick="ANew()">submit</button>
+		<script type="text/javascript">
+			function ANew() {
+				var fidnumber=idnumber.value;
+				var fname=name.value;
+				var fsex=sex.value;
+				var fphone=phone.value;
+				if(fidnumber==""||fname==""||fsex==""||fphone==""){
+					alert("填写处均不得为空！");
+					return;
+				}
+				tab = document.getElementById("tabl");
+				newTr = document.createElement("tr");
+				tab.appendChild(newTr);
+
+				th1 = document.createElement("th");
+				newTr.appendChild(th1);
+				th1.innerHTML = document.llll.idnumber.value;
+
+				th2 = document.createElement("th");
+				newTr.appendChild(th2);
+				th2.innerHTML = document.llll.name.value;
+
+				th3 = document.createElement("th");
+				newTr.appendChild(th3);
+				th3.innerHTML = document.llll.sex.value;
+
+				th4 = document.createElement("th");
+				newTr.appendChild(th4);
+				th4.innerHTML = document.llll.phone.value;
+
+				th5 = document.createElement("th");
+				newTr.appendChild(th5);
+				th5.innerHTML = "<a href='javascript:void(0)' onclick='delect(this)'>删除</a>";
+			}
+
+			function delect(its) {
+				alert("删除成功！");
+				var delRow = its.parentNode.parentNode;
+				delRow.parentNode.removeChild(delRow);
+			}
+		</script>
+		</div>
+  </div>
+  <div id="box1">
+  	<p><font color="bisque" size="5" >如果你符合以下条件并且想要加入我们请填写表格</font></p>
+  	<p><font color="bisque" size="5" >&nbsp;&nbsp;①热爱足球，对各大联赛有一定的了解。
+  <br>&nbsp;&nbsp;②待人接物周到，有服务精神。
+  <br>&nbsp;&nbsp;③有经验者优先。</font></p>
+  </div>
+ 	</div>
+	</body>
+</html>
